@@ -1,0 +1,124 @@
+.imageFundo {
+    -fx-background-image:url("../image/imageFundo.jpg");
+    -fx-background-size: 100% 100%;
+}
+.button_TelaPrin1 {
+  -fx-display: inline-block;
+  -fx-font-size: 24px;
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-outline: none;
+  -fx-color: #fff;
+  -fx-background-color: #fff;
+  -fx-border: none;
+  -fx-border-radius: 15px;
+ /*-fx-box-shadow: 0 9px #999;*/
+}
+
+.button_TelaPrin2:hover {-fx-background-color: #3e8e41}
+
+/*.button_TelaPrin3:active {
+  -fx-background-color: #3e8e41;
+  -fx-box-shadow: 0 5 #666;
+  -fx-transform: translateY(4);
+}*/
+
+.corPadraoFundo{
+   -fx-background-color: #0000CD;  
+
+}
+.corMeio{
+}
+
+.contorno{
+-fx-border-color: #2F4F4F;
+}
+
+.button_form{
+  -fx-background-color: #E0EEEE; /* Green */
+  -fx-border: none;
+  -fx-color: white;
+  /*-fx-padding: calc;*/
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-display: inline-block;
+  -fx-font-size: 16px;
+  -fx-margin: 4px 2px;
+  /*-fx-cursor: pointer;*/
+  -fx--webkit-transition-duration: 0.4s; /* Safari */
+  -fx-transition-duration: 0.4s;
+  
+}
+.menu:showing {
+    /* Menu when it's being show (activated)*/ 
+    -fx-text-fill:white;
+    -fx-padding: 05 7 05 7;
+    -fx-font-family: "Times";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    /*-fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;*/
+    -fx-background-radius: 15px;
+    -fx-text-alignment: center;
+}
+.custom-node {
+    -fx-border-image-source: url("bg2.jpg"), url("mybg.jpg");
+    -fx-border-image-insets: 10, 40;
+    -fx-border-image-repeat: stretch, stretch;
+    -fx-border-image-width: 20, 20;
+    -fx-border-image-slice: 25, 30
+}
+.botao:hover{
+	-fx-color: #cecece;
+	-fx-background-color: #FFFFFF;
+	/*CSS 3*/
+	-fx-border-radius: 35px;
+        -fx-background-radius:35px;
+        -fx-font-weight: bold;
+        -fx-border-right-width: 5px;
+	-fx-border-bottom-width: 5px;
+	-fx-border-left-width: 5px;
+	-fx-border-bottom-style: solid;
+        -fx-border-top-color: #000000;
+	-fx-border-right-color: #000000;
+	-fx-border-bottom-color: #000000;
+	-fx-border-left-color: #000000;
+}
+.botao_Salvar:hover{
+	-fx-color: #cecece;
+	-fx-background-color: #006400;
+	/*CSS 3*/
+	-fx-border-radius: 35px;
+        -fx-background-radius:35px;
+        -fx-font-weight: bold;
+        -fx-border-right-width: 5px;
+	-fx-border-bottom-width: 5px;
+	-fx-border-left-width: 5px;
+	-fx-border-bottom-style: solid;
+        -fx-border-top-color: #000000;
+	-fx-border-right-color: #000000;
+	-fx-border-bottom-color: #000000;
+	-fx-border-left-color: #000000;
+}
+.botao_Excluir:hover{
+	-fx-color: #cecece;
+	-fx-background-color: #FF0000;
+	/*CSS 3*/
+	-fx-border-radius: 35px;
+        -fx-background-radius:35px;
+        -fx-font-weight: bold;
+        -fx-border-right-width: 5px;
+	-fx-border-bottom-width: 5px;
+	-fx-border-left-width: 5px;
+	-fx-border-bottom-style: solid;
+        -fx-border-top-color: #000000;
+	-fx-border-right-color: #000000;
+	-fx-border-bottom-color: #000000;
+	-fx-border-left-color: #000000;
+}

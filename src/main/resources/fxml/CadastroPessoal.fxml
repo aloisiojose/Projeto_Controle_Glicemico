@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetos.controleglicemico.controller.CadastroPessoalController">
+   <children>
+      <HBox alignment="CENTER" layoutY="7.0" prefHeight="54.0" prefWidth="860.0" stylesheets="@../styles/Styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lbTitulo" text="Tela de Cadastro " textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="corPadraoFundo" />
+            <String fx:value="contorno" />
+         </styleClass>
+      </HBox>
+      <AnchorPane layoutX="540.0" layoutY="55.0" prefHeight="474.0" prefWidth="706.0" styleClass="contorno" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="469.0" fitWidth="711.0" layoutX="4.0" layoutY="4.0" opacity="0.12" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <image>
+                  <Image url="@../image/imageFundo.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="tfNome" focusColor="#1c08fc" labelFloat="true" layoutX="24.0" layoutY="44.0" prefHeight="27.0" prefWidth="305.0" promptText="Nome " unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfCpf" focusColor="#1c08fc" labelFloat="true" layoutX="335.0" layoutY="46.0" promptText="CPF" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cbCidade" focusColor="#351ff8" labelFloat="true" layoutX="30.0" layoutY="107.0" prefHeight="25.0" prefWidth="284.0" promptText="Cidade" unFocusColor="#2525fc" />
+            <JFXTextField fx:id="tfCep" focusColor="#1c08fc" labelFloat="true" layoutX="473.0" layoutY="107.0" prefHeight="27.0" prefWidth="171.0" promptText="CEP" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="dtNascimento" defaultColor="#3dbceb" layoutX="518.0" layoutY="46.0" promptText="Data de Nascimento" />
+            <JFXTextField fx:id="tfEndereco" focusColor="#1c08fc" labelFloat="true" layoutX="24.0" layoutY="155.0" prefHeight="27.0" prefWidth="275.0" promptText="Endereço" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfBairro" focusColor="#1c08fc" labelFloat="true" layoutX="304.0" layoutY="156.0" promptText="Bairro" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfComplemento" focusColor="#1c08fc" labelFloat="true" layoutX="458.0" layoutY="156.0" promptText="Complemento" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfNumero" focusColor="#1c08fc" labelFloat="true" layoutX="614.0" layoutY="155.0" prefHeight="27.0" prefWidth="63.0" promptText="N°" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfTelefone" focusColor="#1c08fc" labelFloat="true" layoutX="24.0" layoutY="200.0" promptText="Telefone" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfCelular" focusColor="#1c08fc" labelFloat="true" layoutX="199.0" layoutY="200.0" promptText="Celular" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cbTipoSanguineo" focusColor="#351ff8" labelFloat="true" layoutX="26.0" layoutY="246.0" prefHeight="25.0" prefWidth="146.0" promptText="Tipo Sanguínio" unFocusColor="#2525fc" />
+            <JFXTextField fx:id="tfNomeResponsavel" focusColor="#1c08fc" labelFloat="true" layoutX="26.0" layoutY="295.0" promptText="Nome do Responsável" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfTelefoneResponsavel" focusColor="#1c08fc" labelFloat="true" layoutX="191.0" layoutY="295.0" prefHeight="27.0" prefWidth="159.0" promptText="Telefone" unFocusColor="#2313ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tbCelularResponsavel" focusColor="#1c08fc" labelFloat="true" layoutX="191.0" layoutY="342.0" prefHeight="25.0" prefWidth="159.0" promptText="Celular" unFocusColor="#2313ff" />
+            <JFXRadioButton fx:id="rbMasculino" layoutX="384.0" layoutY="219.0" text="Masculino" textFill="#0705f5">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sexo" />
+               </toggleGroup></JFXRadioButton>
+            <JFXRadioButton fx:id="rbFeminino" layoutX="503.0" layoutY="219.0" text="Feminino" textFill="#f005f8" toggleGroup="$sexo" />
+            <JFXCheckBox fx:id="ckAtivo" checkedColor="#101111" layoutX="387.0" layoutY="263.0" text="Ativo" unCheckedColor="#282727" />
+            <JFXComboBox fx:id="cbUF" layoutX="328.0" layoutY="108.0" prefHeight="25.0" prefWidth="133.0" promptText="UF" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="354.0" prefHeight="73.0" prefWidth="706.0" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnSalvar" alignment="CENTER_RIGHT" layoutX="93.0" layoutY="10.0" mnemonicParsing="false" onAction="#salvarRegistro" prefHeight="58.0" prefWidth="95.0" style="-fx-border-radius: 35; -fx-background-radius: 35;" stylesheets="@../styles/Styles.css" text="SALVAR" textAlignment="RIGHT" AnchorPane.leftAnchor="93.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="contorno" />
+                  <String fx:value="corBotton" />
+                  <String fx:value="botao_Salvar" />
+               </styleClass></Button>
+            <Button fx:id="btnCorrigir" alignment="CENTER_RIGHT" layoutX="515.0" layoutY="10.0" mnemonicParsing="false" onAction="#corrigirRegistro" prefHeight="58.0" prefWidth="95.0" style="-fx-border-radius: 35; -fx-background-radius: 35;" stylesheets="@../styles/Styles.css" text="EXCLUIR" AnchorPane.rightAnchor="93.0">
+               <styleClass>
+                  <String fx:value="contorno" />
+                  <String fx:value="botao" />
+                  <String fx:value="botao_Excluir" />
+               </styleClass></Button>
+            <Button fx:id="btnNovo" alignment="CENTER_RIGHT" layoutX="293.0" layoutY="10.0" mnemonicParsing="false" onAction="#novoRegisto" prefHeight="58.0" prefWidth="95.0" style="-fx-border-radius: 35; -fx-background-radius: 35;" stylesheets="@../styles/Styles.css" text="NOVO">
+               <styleClass>
+                  <String fx:value="contorno" />
+                  <String fx:value="botao" />
+               </styleClass></Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="102.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/salvar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="311.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/novo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="525.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Excluir.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="corPadraoFundo" />
+            <String fx:value="contorno" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutY="58.0" prefHeight="543.0" prefWidth="538.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="58.0">
+         <children>
+            <JFXTextField fx:id="tfPesquisa" labelFloat="true" layoutX="25.0" layoutY="14.0" onKeyReleased="#filtrarRegistro" prefHeight="16.0" prefWidth="305.0" promptText="PESQUISA" style="-fx-background-color: #F5F5DC; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #cecece;" stylesheets="@../styles/Styles.css" unFocusColor="#f8f6f6">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXTextField>
+            <TableView fx:id="tbView" layoutX="3.0" layoutY="52.0" onKeyReleased="#moverTabela" onMouseClicked="#clicarTabela" prefHeight="490.0" prefWidth="354.0" style="-fx-background-color: #FFF;" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+               <cursor>
+                  <Cursor fx:constant="N_RESIZE" />
+               </cursor></TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

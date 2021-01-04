@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="754.0" styleClass="imageFundo" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetos.controleglicemico.controller.TelaPrincipalController">
+   <children>
+      <HBox alignment="CENTER" focusTraversable="true" layoutX="371.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #d0e8f9; -fx-background-radius: 45;" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="371.0" AnchorPane.rightAnchor="185.0">
+         <children>
+            <MenuBar nodeOrientation="LEFT_TO_RIGHT" opacity="0.73" prefHeight="39.0" prefWidth="218.0" style="-fx-background-color: #d0e8f9;" styleClass="menu" stylesheets="@../styles/Styles.css">
+              <menus>
+                <Menu fx:id="barraMeunuArquivo" mnemonicParsing="false" style="-fx-background-size: 20px;" text="Arquivo ">
+                  <items>
+                        <MenuItem fx:id="menuItemCidadeEstado" mnemonicParsing="false" onAction="#acessarItemCidadeEstado" text="Cadastro das Cidade ">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                    <MenuItem fx:id="menuItemCadastro" mnemonicParsing="false" onAction="#acessarItemCadastro" text="Cadastro">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="menuItemHistorico" mnemonicParsing="false" onAction="#acessarItemHistorico" text="Histótico">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="menuItemRelatorio" mnemonicParsing="false" onAction="#acessarItemRelatorio" text="Relatório ">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="menuItemGrafico" mnemonicParsing="false" onAction="#acessarItemGrafico" text="Gráficos">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        
+                                          <MenuItem fx:id="menuItemSair" mnemonicParsing="false" onAction="#acessarItemSair" text="Sair">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu fx:id="barraMenuSobre" mnemonicParsing="false" text="Sobre ">
+                  <items>
+                    <MenuItem fx:id="menuItemSobre" mnemonicParsing="false" onAction="#acessarItemSobre" text="Sobre" />
+                  </items>
+                </Menu>
+                <Menu fx:id="barraMenuAjuda" mnemonicParsing="false" text="Ajude">
+                  <items>
+                    <MenuItem fx:id="menuItemAjude" mnemonicParsing="false" onAction="#acessarItemAjuda" text="Ajude " />
+                  </items>
+                </Menu>
+              </menus>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="217.0" layoutY="102.0" prefHeight="155.0" prefWidth="742.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/imgLogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutY="70.0" opacity="0.79" prefHeight="596.0" prefWidth="170.0" style="-fx-background-color: #d0e8f9;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Button fx:id="btnCadastro" mnemonicParsing="false" onAction="#acessarCadastro" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Cadastro">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="2.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/cadastro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnHistorico" mnemonicParsing="false" onAction="#acessarHistorico" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Histórico">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/historico.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnListaMedicamento" mnemonicParsing="false" onAction="#acessarListaMedicamento" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Medicamento">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/listaMedicamento.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#acessarRelatorio" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Relatório">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/relatorio.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnColeta" mnemonicParsing="false" onAction="#acessarColeta" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Coleta de dados ">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/sobre.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAjuda" mnemonicParsing="false" onAction="#acessarAjuda" prefHeight="86.0" prefWidth="136.0" stylesheets="@../styles/Styles.css" text="Ajuda">
+               <VBox.margin>
+                  <Insets left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="button_TelaPrin1" />
+                  <String fx:value="button_TelaPrin2" />
+                  <String fx:value="button_TelaPrin3" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/ajuda.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding></VBox>
+   </children>
+</AnchorPane>
